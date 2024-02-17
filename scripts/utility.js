@@ -42,4 +42,8 @@ function removeBackgroundColorById(elementId) {
   const element = document.getElementById(elementId);
   element.classList.remove("bg-orange-400");
 }
-
+function skipButtonPress(event) {
+  const playerPressed = event.key;
+  //   console.log('skip:', playerPressed);
+  return playerPressed;
+}

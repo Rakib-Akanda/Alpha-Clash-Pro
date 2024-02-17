@@ -8,7 +8,6 @@
 //     playgroundSection.classList.remove('hidden');
 // }
 
-
 // main function here
 function handleKeyboardButtonPress(event) {
   const playerPressed = event.key;
@@ -71,6 +70,11 @@ function handleKeyboardButtonPress(event) {
 // capture keyboard key press
 document.addEventListener("keyup", handleKeyboardButtonPress);
 
+function skipButton(){
+    document.getElementById('skipButtonOFf').addEventListener('click', function(){
+        gameOver();
+    });
+}
 
 function continueGame() {
   // step-1: generate a random alphabet
