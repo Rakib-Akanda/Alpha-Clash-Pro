@@ -48,7 +48,12 @@
               </p>
             </div>
             <div class="flex justify-center items-center h-full">
-              <p id="current-alphabet" class="text-black text-9xl font-bold uppercase">Y</p>
+              <p
+                id="current-alphabet"
+                class="text-black text-9xl font-bold uppercase"
+              >
+                Y
+              </p>
             </div>
           </div>
           <!-- Keyboard start-->
@@ -91,13 +96,17 @@
           <!-- life score -->
           <div class="flex justify-between w-[1050px]">
             <!-- Display life button -->
-            <button class="btn rounded-full bg-[#894189] text-white px-4 border-none">
+            <button
+              class="btn rounded-full bg-[#894189] text-white px-4 border-none"
+            >
               Life
               <img src="./images/heart.svg" alt="" />
               <span id="current-life">5</span>
             </button>
             <!-- DISPLAY Score button  -->
-            <button class="btn rounded-full bg-[#360490] text-white px-4 border-none">
+            <button
+              class="btn rounded-full bg-[#360490] text-white px-4 border-none"
+            >
               Score
               <img src="./images/monetization_on.svg" alt="" />
               <span id="current-score">0</span>
@@ -108,16 +117,19 @@
       <!-- Play Ground End -->
       <!-- final score start -->
       <section
-        class="score flex justify-center items-center min-h-screen hidden"
+        id="final-score"
+        class="flex justify-center items-center min-h-screen hidden"
       >
         <div
           class="text-white text-center space-y-6 bg-[#FFFFFF33] p-6 rounded-2xl"
         >
+          <h4 class="text-3xl font-medium">Game Over !</h4>
           <h1 class="text-8xl">
             <span class="font-extrabold">Score :</span>
-            <span>14</span>
+            <span id="last-score">14</span>
           </h1>
           <button
+          onclick="play()"
             class="btn text-2xl bg-white text-black font-poppins font-semibold hover:bg-white border-none"
           >
             Play Again
